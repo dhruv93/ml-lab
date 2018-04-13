@@ -59,9 +59,9 @@ for name, model in models:
     msg = "%s: %f " %(name,cv_results.mean())
     print(msg)
 
-knn = KNeighborsClassifier()
-knn.fit(X_train, Y_train)
-predictions = knn.predict(X_validation)
+knaan = KNeighborsClassifier()
+knaan.fit(X_train, Y_train)
+predictions = knaan.predict(X_validation)
 
 print(accuracy_score(Y_validation, predictions))
 
