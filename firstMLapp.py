@@ -43,7 +43,7 @@ print(dataset.shape, "\n")
 test_size = 0.2
 seed = 7
 array = dataset.values
-X = array[:, 0:15]
+X = array[:, 0:14]
 Y = array[:, 14]
 
 print(dataset.groupby('avg-income').size())
